@@ -9,7 +9,7 @@ upper_vowels = ["A", "E", "I", "O", "U", "Y"]
 lower_consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"]
 upper_consonants = ["B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P", "Q", "R", "S", "T", "V", "W", "X", "Z"]
 
-class Phrase:
+class Word:
     def __init__(self, times):
         self.times = times
         steps = 0
