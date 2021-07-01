@@ -1,4 +1,4 @@
-1. The module_en.py plan:
+1. The module_en.py plot:
   1.1. The batch() function:
     Executes the batch command.
     Example: batch("cls") — this command clears the screen in command prompt.
