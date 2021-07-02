@@ -46,3 +46,7 @@
       >>> W
       var2.reverse()
       >>> !dlroW ,olleH
+2. Recommended method of use:
+  The best ways of use are:
+  2.1. Import module to Python interpreter.
+  2.2. Import module to your own Python project.
