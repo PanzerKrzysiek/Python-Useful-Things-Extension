@@ -4,6 +4,8 @@
     Example: batch("cls") — this command clears the screen in command prompt.
   1.2. The Word() class:
     Generates the undefined word in the consonant-vowel-consonant (etc.) sequence.
+    This class must include an integer number passed between quotes.
+    The number will be the count of generated word.
     1.2.1. The .get() method:
       Returns the created word.
         1.2.1.1. The .get() method contains a variable that can store two values:
