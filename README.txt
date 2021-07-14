@@ -49,5 +49,8 @@
       var2.reverse()
       >>> !dlroW ,olleH
 2. Recommended methods of use:
-  2.1. Import module to Python interpreter.
+  2.1. Import module to Python interpreter:
+    2.1.1. Open command prompt in the module.py directory.
+    2.1.2. Type "python" in command prompt.
+    2.1.3. Type "from module import *" in command prompt.
   2.2. Import module to your own Python project.
