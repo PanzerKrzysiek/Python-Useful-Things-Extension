@@ -12,40 +12,38 @@ upper_consonants = ["B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P", 
 class Word:
     def __init__(self, times):
         self.times = times
-        steps = 0
-        list = []
-        for i in range(self.times):
-            steps += 1
-            if self.times == 1:
-                list.append(r.choice(upper_consonants))
-                break
-            if self.times == 2:
-                list.append(r.choice(upper_consonants))
-                list.append(r.choice(lower_vowels))
-                break
-            if steps == 1:
-                list.append(r.choice(upper_consonants))
-                continue
-            elif steps % 2 != 0:
-                list.append(r.choice(lower_consonants))
-            elif steps % 2 == 0:
-                list.append(r.choice(lower_vowels))
-            if steps == times - 1 and steps % 2 != 0:
-                list.append(r.choice(lower_vowels))
-                break
-            elif steps == times - 1 and steps % 2 == 0:
-                list.append(r.choice(lower_consonants))
-                break
-        self.result = "".join(list)
-    def get(self, mode = "normal"):
-        self.mode = mode
-        self.result_reversed = self.result[::-1]
-        self.result_lower = self.result_reversed.lower()
-        self.result_capitalize = self.result_lower.capitalize()
-        if self.mode == "normal":
-            print(self.result)
-        if self.mode == "reversed":
-            print(self.result_capitalize)
+		steps = 0
+		list = []
+		for i in range(self.times):
+			if steps % 2 == 0:
+				list.append(r.choice(consonants))
+			elif steps % 2 != 0:
+				list.append(r.choice(vowels))
+			steps += 1
+		self.result = "".join(list).capitalize()
+    def __repr__(self):
+		return self.result
+	def __len__(self):
+		return len(self.result)
+	def get(self, mode = "normal"):
+		self.mode = mode
+		self.result_reversed = self.result[::-1]
+		self.result_lower = self.result_reversed.lower()
+		self.result_capitalize = self.result_lower.capitalize()
+		if self.mode == "normal":
+			return self.result
+		elif self.mode == "reversed":
+			return self.result_capitalize
+		elif self.mode == "lenght":
+			return len(self.result)
+		elif self.mode == "capitalized":
+			return self.result.capitalize()
+		elif self.mode == "lowered":
+			return self.result.lower()
+		elif self.mode == "uppered":
+			return self.result.upper()
+		else:
+			return self.result
 
 class String:
     def __init__(self, text):
