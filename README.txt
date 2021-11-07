@@ -11,14 +11,14 @@
     2.2.1. The __repr__(self) method:
       Returns the generated word by printing the name of class Word().
       Example:
-        var1 = Word(5)
-        print(var1)
-        >>> Tefop
+        >>> var1 = Word(5)
+        >>> print(var1)
+        Tefop
     2.2.2. The __len__(self) method:
       Returns the lenght of the generated word.
-        var1 = Word(5)
-        print(len(var1))
-        >>> 5
+        >>> var1 = Word(5)
+        >>> print(len(var1))
+        5
     2.2.3. The .get() method:
       Returns the created word.
       2.2.3.1. The .get() method contains a variable that can store the following values:
@@ -29,11 +29,21 @@
         2.2.3.1.5. The "lowered" value — returns the lowered form of generated word.
         2.2.3.1.6. The "uppered" value — returns the uppered form of generated word.
     Example:
-      var1 = Word(5)
-      var1.get()
-      >>> Ryvop
-      var1.get("reversed")
-      >>> Povyr
+      >>> var1 = Word(5)
+      >>> var1.get()
+      Ryvop
+      >>> var1.get("normal")
+      Ryvop
+      >>> var1.get("reversed")
+      Povyr
+      >>> var1.get("lenght")
+      5
+      >>> var1.get("capitalized")
+      Ryvop
+      >>> var1.get("lowered")
+      ryvop
+      >>> var1.get("uppered")
+      RYVOP
   2.3. The String() class:
     Executes different operations on a string written in brackets.
     2.3.1. The each_letter() method:
@@ -49,22 +59,23 @@
     2.3.5 The .reverse() method:
       Returns the reversed string.
     Example:
-      var2 = String("Hello, World!")
-      var2.each_letter()
-      >>> H
-      >>> e
-      >>> l
-      >>> l
-      >>> o
+      >>> var2 = String("Hello, World!")
+      >>> var2.each_letter()
+      H
+      e
+      l
+      l
+      o
       [...]
-      var2.get()
-      >>> Hello, World!
-      var2.get_lenght()
-      >>> 13
-      var2.letter(7)
-      >>> W
-      var2.reverse()
-      >>> !dlroW ,olleH
+      >>> var2.get()
+      Hello, World!
+      >>> var2.get_lenght()
+      13
+      >>> var2.letter(7)
+      W
+      >>> var2.reverse()
+      !dlroW ,olleH
+
 3. Recommended methods of use:
   3.1. Import module to Python interpreter:
     3.1.1. Open command prompt in the module.py directory.
