@@ -2,17 +2,32 @@
  
 2. The module.py plot:
   2.1. The batch() function:
-    Executes the batch command.
+    Executes the batch commands from Windows Command Prompt.
     Example: batch("cls") — this command clears the screen in command prompt.
   2.2. The Word() class:
     Generates the undefined word in the consonant-vowel-consonant (etc.) sequence.
     This class must include an integer number passed between quotes.
     The number will be the count of generated word.
-    2.2.1. The .get() method:
+    2.2.1. The __repr__(self) method:
+      Returns the generated word by printing the name of class Word().
+      Example:
+        var1 = Word(5)
+        print(var1)
+        >>> Tefop
+    2.2.2. The __len__(self) method:
+      Returns the lenght of the generated word.
+        var1 = Word(5)
+        print(len(var1))
+        >>> 5
+    2.2.3. The .get() method:
       Returns the created word.
-        1.2.1.1. The .get() method contains a variable that can store two values:
-          1.2.1.1.1. The "normal" (default) value — returns the basic form of generated word.
-          1.2.1.1.2. The "reversed" value — returns the reversed word.
+      2.2.3.1. The .get() method contains a variable that can store the following values:
+        2.2.3.1.1. The "normal" (default) value — returns the basic form of generated word.
+        2.2.3.1.2. The "reversed" value — returns the reversed word.
+        2.2.3.1.3. The "lenght" value — returns the lenght of the word.
+        2.2.3.1.4. The "capitalized" value — returns the capitalized form of generated word.
+        2.2.3.1.5. The "lowered" value — returns the lowered form of generated word.
+        2.2.3.1.6. The "uppered" value — returns the uppered form of generated word.
     Example:
       var1 = Word(5)
       var1.get()
