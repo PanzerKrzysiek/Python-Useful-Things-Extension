@@ -1,6 +1,6 @@
 1. Requirements: Python; libraries: random, os.
  
-2. The module.py plot:
+2. The module.py content:
   2.1. The batch() function:
     Executes the batch commands from Windows Command Prompt.
     Example: batch("cls") — this command clears the screen in command prompt.
