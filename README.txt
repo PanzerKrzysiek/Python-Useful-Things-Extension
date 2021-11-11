@@ -1,4 +1,4 @@
-1. Requirements: Python.
+1. Requirements: Python; libraries: random, os.
  
 2. The module.py plot:
   2.1. The batch() function:
